@@ -22,6 +22,7 @@ const defaultOpts = {
 @Component({
   selector: 'ion-auto-complete',
   template: `
+	  <ion-label floating *ngIf="labelName">{{labelName}}</ion-label>
       <ion-input
               #inputElem
               (keyup)="getItems($event)" 
@@ -59,6 +60,7 @@ const defaultOpts = {
               (ionBlur)="onBlur()"
       >
       </ion-searchbar>
+	  
       <ng-template #defaultTemplate let-attrs="attrs">
           <span [innerHTML]='(attrs.labelAttribute ? attrs.data[attrs.labelAttribute] : attrs.data) | boldprefix:attrs.keyword'></span>
       </ng-template>
@@ -87,6 +89,7 @@ export class AutoCompleteComponent implements ControlValueAccessor {
   @Input() public hideListOnSelection: boolean = true;
   @Input() public template: TemplateRef<any>;
   @Input() public useIonInput: boolean;
+  @Input() public labelName: string;
   @Output() public autoFocus: EventEmitter<any>;
   @Output() public autoBlur: EventEmitter<any>;
   @Output() public itemSelected:  EventEmitter<any>;
