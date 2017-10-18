@@ -1,9 +1,9 @@
 {
-  "name": "ionic2-auto-complete",
+  "name": "ionic2-auto-complete-custom",
   "version": "1.5.3-beta",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kadoshms/ionic2-autocomplete"
+    "url": "https://github.com/nosTa1337/ionic2-autocomplete-custom"
   },
   "author": {
     "name": "mor",
@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kadoshms/ionic2-autocomplete/issues"
+    "url": "https://github.com/nosTa1337/ionic2-autocomplete-custom/issues"
   },
   "module": "ionic2-auto-complete.js",
   "typings": "ionic2-auto-complete.d.ts",
