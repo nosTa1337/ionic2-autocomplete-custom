@@ -1,6 +1,6 @@
 {
   "name": "ionic2-auto-complete-custom",
-  "version": "1.5.3-beta",
+  "version": "1.5.4-beta",
   "scripts": {
     "build": "gulp build",
     "build:watch": "gulp",
@@ -46,14 +46,19 @@
     "core-js": "^2.4.1",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "gulp-inline-source": "^3.1.0",
+    "gulp-jshint": "^2.0.4",
     "gulp-rename": "^1.2.2",
     "gulp-rollup": "^2.11.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
     "ionic-angular": "3.2.1",
     "ionic2-auto-complete-custom": "^1.4.3-release",
     "ionicons": "3.0.0",
     "jasmine-core": "~2.5.2",
     "jasmine-spec-reporter": "~3.2.0",
+    "jshint": "^2.9.5",
     "karma": "~1.4.1",
     "karma-chrome-launcher": "~2.0.0",
     "karma-cli": "~1.0.1",
@@ -77,5 +82,8 @@
   },
   "description": "Repo taken from https://github.com/kadoshms/ionic2-autocomplete with some template modifications",
   "homepage": "https://github.com/kadoshms/ionic2-autocomplete#readme",
-  "main": "gulpfile.js"
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
 }
